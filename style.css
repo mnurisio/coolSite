@@ -1,0 +1,93 @@
+:root {
+    --main-1-theme: #061130;
+    --main-2-theme: #FCFCFC;
+    --second-theme: #FFFFFF;
+    --footer-theme: #EEF3F3;
+    --awesome-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--awesome-font)
+}
+
+header {
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-1-theme);
+    align-items: center;
+}
+
+/* header img {
+    margin-left: 10px;
+} */
+
+span {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--main-1-theme);
+    color: var(--second-theme);
+    
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: #469CEA;
+    color: var(--second-theme);
+}
+
+button:hover {
+    background-color: var(--main-2-theme);
+    color: var(--main-1-theme);
+    transition: 400ms;
+    cursor: pointer;
+}
+
+main.first-main {
+    color: var(--second-theme);
+    background-color: var(--main-1-theme);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin: 0;
+}
+
+div.Services {
+    color: yellow;
+}
+
+
+main.second-main {
+    background-color: var(--main-2-theme);
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main.second-main a {
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: var(--footer-theme);
+    text-align: center;
+    padding: 33px;
+}
+
+@media screen AND (max-width: 988px) {
+    main.first-main{
+        display: block;
+    }
+    main.second-main{
+        display: block;
+    }
+    .world-img{
+        max-width: 100%;
+    }
+} 
